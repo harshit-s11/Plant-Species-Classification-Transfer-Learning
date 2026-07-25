@@ -1,31 +1,32 @@
-# House Plant Species Classification using Transfer Learning
+# 🌿 Plant Species Classification using Transfer Learning
 
-A deep learning-based image classification system that identifies different species of house plants from images using transfer learning. The project leverages TensorFlow and Keras to build, train, fine-tune, and evaluate a convolutional neural network capable of accurately classifying plant species.
-
----
-
-## Overview
-
-This project demonstrates an end-to-end deep learning workflow for image classification. It includes data preprocessing, dataset cleaning, model training, fine-tuning, evaluation, and prediction using a pretrained convolutional neural network.
-
-The model is trained on a dataset containing images of various house plant species and predicts the species of an input plant image.
+A deep learning-based image classification system that identifies house plant species from images using **Transfer Learning** with TensorFlow and Keras. The project demonstrates an end-to-end computer vision workflow, including data preprocessing, model training, fine-tuning, evaluation, and prediction.
 
 ---
 
-## Features
+## 📖 Overview
 
-- Dataset cleaning and preprocessing
-- Automatic train, validation, and test dataset creation
-- Data augmentation for improved generalization
+Plant species identification is an important application of computer vision in agriculture, horticulture, and botanical research. This project leverages a pretrained Convolutional Neural Network (CNN) to accurately classify different house plant species from images.
+
+The notebook covers the complete deep learning pipeline—from dataset preparation and augmentation to transfer learning, model fine-tuning, performance evaluation, and prediction on unseen images.
+
+---
+
+## ✨ Features
+
+- Image dataset preprocessing and cleaning
+- Automatic training, validation, and test dataset creation
+- Data augmentation for improved model generalization
 - Transfer learning using a pretrained CNN
-- Fine-tuning of the pretrained model
+- Fine-tuning for higher classification accuracy
 - Performance evaluation using accuracy and loss metrics
-- Prediction on unseen plant images
-- Visualization of training history
+- Prediction on new plant images
+- Training history visualization
+- End-to-end implementation in Jupyter Notebook
 
 ---
 
-## Technologies Used
+## 🛠️ Tech Stack
 
 - Python
 - Jupyter Notebook
@@ -38,44 +39,46 @@ The model is trained on a dataset containing images of various house plant speci
 
 ---
 
-## Project Structure
+## 📂 Project Structure
 
-```
-House-Plant-Species-Classification/
+```text
+Plant-Species-Classification-Transfer-Learning/
 │
-├── model-final.ipynb
-├── README.md
-├── requirements.txt
+├── model-final.ipynb        # Model training and evaluation notebook
+├── requirements.txt         # Project dependencies
+├── README.md                # Project documentation
 └── .gitignore
 ```
 
 ---
 
-## Dataset
+## 📊 Dataset
 
-The project uses a dataset containing images of different house plant species.
+The model is trained on an image dataset containing multiple house plant species.
 
-Each plant species is stored in a separate folder, allowing TensorFlow to automatically assign class labels during training.
+### Dataset Preparation
 
-Dataset preprocessing includes:
+- Remove corrupted or invalid images
+- Organize images into class-specific folders
+- Split dataset into:
+  - Training Set
+  - Validation Set
+  - Test Set
+- Apply data augmentation techniques to improve robustness
 
-- Removing corrupted images
-- Splitting data into training, validation, and testing sets
-- Data augmentation to improve model robustness
+> **Note:** The dataset is not included in this repository due to its size.
 
 ---
 
-## Model Architecture
+## 🧠 Model Architecture
 
-The project uses Transfer Learning with a pretrained Convolutional Neural Network (CNN).
+The project uses **Transfer Learning** with a pretrained Convolutional Neural Network.
 
-The workflow is:
-
-```
+```text
 Input Image
       │
       ▼
-Pretrained CNN
+Pretrained CNN Backbone
       │
       ▼
 Global Average Pooling
@@ -84,37 +87,37 @@ Global Average Pooling
 Dropout Layer
       │
       ▼
-Dense Softmax Layer
+Dense Softmax Classifier
       │
       ▼
 Predicted Plant Species
 ```
 
-After initial training, selected layers of the pretrained model are fine-tuned to improve classification performance.
+After initial training, selected layers of the pretrained model are fine-tuned to further improve classification performance.
 
 ---
 
-## Installation
+## ⚙️ Installation
 
-Clone the repository:
-
-```bash
-git clone https://github.com/ans-jain/House-Plant-Species-Classification.git
-```
-
-Move into the project directory:
+### Clone the repository
 
 ```bash
-cd House-Plant-Species-Classification
+git clone https://github.com/harshit-s11/Plant-Species-Classification-Transfer-Learning.git
 ```
 
-Install the required packages:
+### Navigate to the project directory
+
+```bash
+cd Plant-Species-Classification-Transfer-Learning
+```
+
+### Install dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-Launch Jupyter Notebook:
+### Launch Jupyter Notebook
 
 ```bash
 jupyter notebook
@@ -122,58 +125,83 @@ jupyter notebook
 
 Open:
 
-```
+```text
 model-final.ipynb
 ```
 
 ---
 
-## Running the Project
+## 🚀 Usage
 
 1. Download the plant species dataset.
 2. Update the dataset path in the notebook.
-3. Run all notebook cells.
-4. Train the model.
-5. Evaluate the model.
-6. Predict the species of new plant images.
+3. Run all notebook cells sequentially.
+4. Train the transfer learning model.
+5. Fine-tune the pretrained layers.
+6. Evaluate model performance.
+7. Predict plant species for new images.
 
 ---
 
-## Results
+## 📈 Results
 
-The notebook provides:
+The notebook provides detailed evaluation including:
 
 - Training Accuracy
 - Validation Accuracy
 - Training Loss
 - Validation Loss
-- Model Evaluation
-- Plant Species Prediction
+- Model Evaluation Metrics
+- Prediction Results
+- Training Performance Graphs
 
 ---
 
-## Applications
+## 🌱 Applications
 
 - Smart Gardening
-- Plant Identification
+- Plant Species Identification
+- Agricultural Technology
 - Botanical Research
-- Educational Projects
-- Computer Vision
-- Deep Learning Learning Projects
+- Educational Deep Learning Projects
+- Computer Vision Applications
 
 ---
 
-## Future Improvements
+## 🔮 Future Improvements
 
 - Deploy the model using Flask or FastAPI
+- Build a Streamlit web application
 - Develop a mobile application
-- Integrate real-time camera-based prediction
 - Support additional plant species
-- Deploy on edge devices such as Raspberry Pi
+- Real-time camera-based prediction
+- Edge deployment on Raspberry Pi
+- Export the model using TensorFlow Lite
 
 ---
 
-## Author
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome.
+
+If you'd like to improve this project:
+
+1. Fork the repository
+2. Create a feature branch
+3. Commit your changes
+4. Push to your branch
+5. Open a Pull Request
+
+---
+
+## 📄 License
+
+This project is intended for educational and learning purposes.
+
+---
+
+## 👨‍💻 Author
 
 **Harshit Sharma**
 
+If you found this project useful, consider giving it a ⭐ on GitHub.
