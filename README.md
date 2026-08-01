@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/banner.png" alt="Plant Species Classification Banner" width="100%">
+  <img src="banner.png" alt="Plant Species Classification Banner" width="100%">
 </p>
 
 # 🌿 Plant Species Classification using Transfer Learning
